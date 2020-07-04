@@ -10,6 +10,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:wght@400;900&display=swap"
     rel="stylesheet">
 
+  <!-- Feather Icons  -->
+  <!-- <script src="https://unpkg.com/feather-icons"></script> -->
+
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
     integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
@@ -23,10 +26,10 @@
 <body>
 
   <!-- Navigation  -->
-  <header id="header">
+  <header id="header" class="px-lg-5 px-md-0">
     <nav class="navbar navbar-expand-lg p-0">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="images/logo.png" width="100" alt="logo-image"></a>
+      <div class="container">
+        <a class="navbar-brand" href="#"><img class="logo" src="images/logo.png" alt="logo-image"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -37,13 +40,22 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="#">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img src="icons/github.svg" alt="github icon"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img src="icons/twitter.svg" alt="twitter icon"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img src="icons/search.svg" alt="search icon"></a>
             </li>
           </ul>
         </div>
@@ -58,22 +70,138 @@
       <div class="row">
 
         <div class="col-lg-6">
-          <div class="intro-big mt-5">
-            <h1 class="intro_title">
-              Hi, I'm <strong class="d-block">Hassan Ateeq. </strong>
-              I develop efficient Web Apps.
+          <div class="intro-big">
+            <h1 class="section_title section_title--intro">
+              Hello, I am<span class="d-block">Hassan Ateeq.</span>
+              I make Web Apps.
+
             </h1>
-            <p class="intro-subtitle">
-              Web Developer
+            <p class="section_subtitle section_subtitle--intro">
+              Full Stack Web Developer
             </p>
           </div>
         </div>
 
         <div class="col-lg-6">
-          <img class="w-75" src="images/hassanateeq.png" alt="Hassan Ateeq">
+          <img class="img-fluid" src="images/hassanateeq.png" alt="Hassan Ateeq">
         </div>
       </div>
     </div>
+  </section>
+
+  <!-- About Me Section  -->
+
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <img class="img-fluid" src="images/about.jpg" alt="About Hassan Ateeq">
+        </div>
+
+        <div class="col-lg-6">
+          <h2 class="section_title section_title--about">
+            About Me
+          </h2>
+          <p class="section_subtitle section_subtitle--about">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Eius ab vero debitis, enim deleniti explicabo repudiandae qui expedita, consequatur soluta quaerat, mollitia
+            neque asperiores
+            . Quidem excepturi dolorum odio veritatis nobis!
+            orem ipsum dolor sit amet consectetur adipisicing elit.
+            Eius ab vero debitis, enim deleniti explicabo repudiandae qui expedita, consequatur soluta quaerat, mollitia
+            neque asperiores
+            . Quidem excepturi dolorum odio veritatis nobis!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section  -->
+
+  <section id="portfolio">
+    <h1 class="text-center section_title section_title--portfolio">My Work</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-fluid" src="images/BerzanSurgical.jpg" alt="">
+        </div>
+        <div class="col-lg-4">
+          <img class="img-fluid" src="images/BerzanTrading.jpg" alt="">
+        </div>
+        <div class="col-lg-4">
+          <img class="img-fluid" src="images/Tels.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-fluid" src="images/BerzanSurgical.jpg" alt="">
+        </div>
+        <div class="col-lg-4">
+          <img class="img-fluid" src="images/BerzanTrading.jpg" alt="">
+        </div>
+        <div class="col-lg-4">
+          <img class="img-fluid" src="images/Tels.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Blog Section  -->
+
+  <section id="blog">
+    <h1 class="text-center section_title section_title--blog">Read my Articles</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card" style="width: 18rem;">
+            <img src="images/about.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's
+                content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card" style="width: 18rem;">
+            <img src="images/about.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's
+                content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card" style="width: 18rem;">
+            <img src="images/about.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's
+                content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer  -->
+
+  <section id="footer">
+    <p>&copy 2020<a>hassanateeq.com</a></p>
   </section>
 
 

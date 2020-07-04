@@ -1,39 +1,84 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
- /* Custom Properties  */
+/* Custom Properties  */
 
- :root{
-     --dark: #303841;
-     --half-dark: #3a4750;
-     --red: #d72323;
-     --white: #eeeeee;
- }
+:root {
+    --dark: #303841;
+    --half-dark: #3a4750;
+    --red: #d72323;
+    --white: #eeeeee;
 
-body{
+    --ff-primary: 'Roboto', sans-serif;
+    --ff-secondary: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: var(--white);
+    font-family: var(--ff-primary);
+    line-height: 1.6;
+}
+
+
+/* ######## Navigation #########  */
+
+#header {
     background-color: var(--white);
 }
 
-#header{
-    background-color: var(--half-dark);
-    color: white;
+.logo {
+    width: 100px;
 }
 
-h1{
+
+.nav-item {
+    padding: 0 8px;
+}
+
+.nav-link {
+    color: var(--dark);
+    font-family: var(--ff-primary);
+}
+
+
+/* ############## Intro Section #############  */
+
+#intro {
+    background-color: var(--dark);
+    padding: 2% 0%;
+}
+
+.intro-big {
+    margin-top: 8rem;
+}
+
+.section_title {
+    font-family: var(--ff-primary);
     font-size: 3rem;
 }
 
-p{
+.section_title--intro {
+    color: var(--white);
+    letter-spacing: 4px;
+    line-height: 1.5;
+}
+
+.section_subtitle--intro {
     background-color: var(--red);
+    font-family: var(--ff-primary);
+    font-size: 1.5rem;
+    color: var(--white);
+    padding: 4px;
+    font-style: italic;
+    margin-top: 20px;
 }
 
 
-@media(max-width: 600px)
-{
-    h1{
-        font-size: 1rem;
-    }
+/* ######### About Section ##########  */
+
+#about {
+    padding: 4%;
 }
