@@ -1,218 +1,306 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google Fonts  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts  -->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:wght@400;900&display=swap"
-    rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
+    />
 
-  <!-- Feather Icons  -->
-  <!-- <script src="https://unpkg.com/feather-icons"></script> -->
+    <!-- Custom CSS  -->
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
-    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <title>Portfolio Website</title>
+  </head>
 
-  <!-- Custom CSS  -->
-  <link rel="stylesheet" href="style.css">
+  <body>
+    <!-- Navigation  -->
+    <header id="header" class="px-lg-5 px-md-0">
+      <nav class="navbar navbar-expand-lg p-0">
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img class="logo" src="images/logo.png" alt="logo-image"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <img src="icons/menu.svg" alt="menu-icon" />
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="icons/github.svg" alt="github icon"
+                /></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="icons/twitter.svg" alt="twitter icon"
+                /></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="icons/search.svg" alt="search icon"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-  <title>Portfolio Website</title>
-</head>
+    <!-- Intro Section  -->
 
-<body>
-
-  <!-- Navigation  -->
-  <header id="header" class="px-lg-5 px-md-0">
-    <nav class="navbar navbar-expand-lg p-0">
+    <section id="intro">
       <div class="container">
-        <a class="navbar-brand" href="#"><img class="logo" src="images/logo.png" alt="logo-image"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><img src="icons/github.svg" alt="github icon"></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><img src="icons/twitter.svg" alt="twitter icon"></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><img src="icons/search.svg" alt="search icon"></a>
-            </li>
-          </ul>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="intro-big">
+              <h1 class="section_title section_title--intro">
+                Hello, I am<span class="d-block">Hassan Ateeq.</span>
+                I make Web Apps.
+              </h1>
+              <p class="section_subtitle section_subtitle--intro">
+                Full Stack Web Developer
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <img
+              class="w-75 d-block m-auto"
+              src="images/hassanateeq.png"
+              alt="Hassan Ateeq"
+            />
+          </div>
         </div>
       </div>
-    </nav>
-  </header>
+    </section>
 
-  <!-- Intro Section  -->
+    <!-- About Me Section  -->
 
-  <section id="intro">
-    <div class="container">
-      <div class="row">
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <img
+              class="w-75 d-block m-auto"
+              src="images/hassan.png"
+              alt="About Hassan Ateeq"
+            />
+          </div>
 
-        <div class="col-lg-6">
-          <div class="intro-big">
-            <h1 class="section_title section_title--intro">
-              Hello, I am<span class="d-block">Hassan Ateeq.</span>
-              I make Web Apps.
-
-            </h1>
-            <p class="section_subtitle section_subtitle--intro">
-              Full Stack Web Developer
+          <div class="col-lg-6">
+            <h2 class="section_title section_title--about m-4 text-center">
+              About Me
+            </h2>
+            <p class="section_subtitle section_subtitle--about">
+              Hi, I am Full Stack Web Developer. I have passion and problem
+              handling skills to build web applications. I have done various
+              types of Projects with different people.
+            </p>
+            <p>
+              In other Words, I am Ninja in Web and Mobile Application
+              Development. I helped over 5+ Business to achieve their goals. My
+              Github profile speaks about my working capability.
+            </p>
+            <p>
+              I am working both on Front-end as well as Back-end. In front-end,
+              I used ReactJS, Bootstrap and in back-end, I used
+              NodeJS/ExpressJS, MongoDB. In Mobile Apps, I worked in Flutter,
+              Google SDK.
+            </p>
+            <p>
+              I have also Expertise in Wordpress Development. I already
+              developed Custom themes for Wordpress Repositery.
             </p>
           </div>
         </div>
-
-        <div class="col-lg-6">
-          <img class="img-fluid" src="images/hassanateeq.png" alt="Hassan Ateeq">
-        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- About Me Section  -->
+    <!-- Portfolio Section  -->
 
-  <section id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <img class="img-fluid" src="images/about.jpg" alt="About Hassan Ateeq">
-        </div>
+    <section id="portfolio">
+      <h1 class="text-center section_title section_title--portfolio">
+        My Portfolio
+      </h1>
 
-        <div class="col-lg-6">
-          <h2 class="section_title section_title--about">
-            About Me
-          </h2>
-          <p class="section_subtitle section_subtitle--about">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Eius ab vero debitis, enim deleniti explicabo repudiandae qui expedita, consequatur soluta quaerat, mollitia
-            neque asperiores
-            . Quidem excepturi dolorum odio veritatis nobis!
-            orem ipsum dolor sit amet consectetur adipisicing elit.
-            Eius ab vero debitis, enim deleniti explicabo repudiandae qui expedita, consequatur soluta quaerat, mollitia
-            neque asperiores
-            . Quidem excepturi dolorum odio veritatis nobis!
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
+      <div class="container">
+        <button
+          class="btn btn-primary pressed"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapseExample"
+          aria-expanded="false"
+          aria-controls="collapseExample"
+        >
+          All
+        </button>
 
-  <!-- Portfolio Section  -->
+        <button
+          class="btn btn-primary wordpress"
+          type="button"
+          data-toggle="collapse"
+          data-target="#wordpress"
+          aria-expanded="false"
+          aria-controls="collapseExample"
+        >
+          Wordpress
+        </button>
 
-  <section id="portfolio">
-    <h1 class="text-center section_title section_title--portfolio">My Work</h1>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <img class="img-fluid" src="images/BerzanSurgical.jpg" alt="">
-        </div>
-        <div class="col-lg-4">
-          <img class="img-fluid" src="images/BerzanTrading.jpg" alt="">
-        </div>
-        <div class="col-lg-4">
-          <img class="img-fluid" src="images/Tels.jpg" alt="">
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-4">
-          <img class="img-fluid" src="images/BerzanSurgical.jpg" alt="">
-        </div>
-        <div class="col-lg-4">
-          <img class="img-fluid" src="images/BerzanTrading.jpg" alt="">
-        </div>
-        <div class="col-lg-4">
-          <img class="img-fluid" src="images/Tels.jpg" alt="">
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Blog Section  -->
-
-  <section id="blog">
-    <h1 class="text-center section_title section_title--blog">Read my Articles</h1>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="card" style="width: 18rem;">
-            <img src="images/about.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's
-                content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="collapse" id="wordpress">
+          <div class="row">
+            <div class="col-lg-4">
+              <img class="img-fluid" src="images/BerzanSurgical.jpg" alt="" />
+            </div>
+            <div class="col-lg-4">
+              <img class="img-fluid" src="images/BerzanTrading.jpg" alt="" />
+            </div>
+            <div class="col-lg-4">
+              <img class="img-fluid" src="images/Tels.jpg" alt="" />
             </div>
           </div>
         </div>
 
-        <div class="col-lg-4">
-          <div class="card" style="width: 18rem;">
-            <img src="images/about.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's
-                content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="collapse all" id="collapseExample">
+          <div class="row">
+            <div class="col-lg-4">
+              <img class="img-fluid" src="images/BerzanSurgical.jpg" alt="" />
+            </div>
+            <div class="col-lg-4">
+              <img class="img-fluid" src="images/BerzanTrading.jpg" alt="" />
+            </div>
+            <div class="col-lg-4">
+              <img class="img-fluid" src="images/Tels.jpg" alt="" />
             </div>
           </div>
-        </div>
 
-        <div class="col-lg-4">
-          <div class="card" style="width: 18rem;">
-            <img src="images/about.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's
-                content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+          <div class="row">
+            <div class="col-lg-4">
+              <img class="img-fluid" src="images/BerzanSurgical.jpg" alt="" />
+            </div>
+            <div class="col-lg-4">
+              <img class="img-fluid" src="images/BerzanTrading.jpg" alt="" />
+            </div>
+            <div class="col-lg-4">
+              <img class="img-fluid" src="images/Tels.jpg" alt="" />
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
+    <!-- Blog Section  -->
 
-  <!-- Footer  -->
+    <section id="blog">
+      <h1 class="text-center section_title section_title--blog">
+        Read my Articles
+      </h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card" style="width: 18rem;">
+              <img
+                class="img-fluid"
+                src="images/about.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
 
-  <section id="footer">
-    <p>&copy 2020<a>hassanateeq.com</a></p>
-  </section>
+          <div class="col-lg-4">
+            <div class="card" style="width: 18rem;">
+              <img src="images/about.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
 
+          <div class="col-lg-4">
+            <div class="card" style="width: 18rem;">
+              <img src="images/about.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Optional JavaScript -->
-  <!-- Popper.js first, then Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
-    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous">
-  </script>
-</body>
+    <!-- Footer  -->
 
+    <section id="footer">
+      <p>&copy 2020<a>hassanateeq.com</a></p>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="index.js"></script>
+  </body>
 </html>
