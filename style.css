@@ -48,9 +48,9 @@ body {
   padding: 2% 0%;
 }
 
-.intro-big {
+/* .intro-big {
   margin-top: 4rem;
-}
+} */
 
 .section_title {
   font-family: var(--ff-primary);
@@ -70,13 +70,17 @@ body {
   color: var(--white);
   padding: 4px;
   font-style: italic;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 /* ######### About Section ##########  */
 
 #about {
   margin-top: 4rem;
+}
+
+.section_title--about {
+  font-weight: bold;
 }
 
 
